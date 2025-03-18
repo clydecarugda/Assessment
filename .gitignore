@@ -2,7 +2,3 @@
 dist/*
 build/*
 *.spec
-
-# Output Files
-Output/*
-!Output/
