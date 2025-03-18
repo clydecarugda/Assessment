@@ -54,7 +54,7 @@ def ValidateWriter(writer_list, writers_json_data):
       
   return writer_list
 
-def EnrichDataGenre(data, genre_path, writters_path):    
+def EnrichDataGenreWriters(data, genre_path, writters_path):    
   # Genre
   with open(genre_path, 'r') as genre_file:
     genre_json_data = json.load(genre_file)
@@ -120,7 +120,7 @@ genre_data_path = 'datasets/genre.json'
 writters_data_path = 'datasets/writters.json'
 
 movies_data = LoadMoviesData(movies_data_path)
-movies_data = EnrichDataGenre(movies_data, genre_data_path, writters_data_path)
+movies_data = EnrichDataGenreWriters(movies_data, genre_data_path, writters_data_path)
 movies_data = CalculateFields(movies_data)
 
 # Drop unnecessary columns & Rearranged columns
