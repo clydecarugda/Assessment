@@ -138,5 +138,5 @@ movies_data = movies_data[data_column_order]
 # Export Data
 movies_data_json = json.loads(movies_data.to_json(orient='records'))
 
-with open('Output/movies_output.json', 'w') as f:
+with open('Output/output.json', 'w') as f:
   json.dump(movies_data_json, f, indent=2, separators=(',', ': '))
