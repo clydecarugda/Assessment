@@ -20,9 +20,9 @@
    - pip install -r requirements.txt
   
 5. The files required for the code to run are
-   - movies.csv (This file should be in the root folder)
-   - datasets/genre.json
-   - datasets/writters.json
+   - ./movies.csv (This file should be in the root folder)
+   - ./datasets/genre.json
+   - ./datasets/writters.json
 Note: These files should be present in their respective folder for the python script to run.
 
 6. Run the script using a python debugger(F5 and select python debugger) or use the .exe file I created using PyInstaller for your convinience.
